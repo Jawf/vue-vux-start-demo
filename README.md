@@ -1,6 +1,6 @@
-# 参考自 [bailicangdu](https://github.com/bailicangdu/vue2-elm)，在此基础上做了一些修改，优化。
+# 参考自 [huyongyong1992/vue_axios_spa](https://github.com/huyongyong1992/vue_axios_spa) (参考[bailicangdu](https://github.com/bailicangdu/vue2-elm)，在此基础上做了一些修改，优化） 及[leslieSie/vue-for-my-english-app](https://github.com/leslieSie/vue-for-my-english-app)。
 ## 技术栈
-vue2 + vuex + vue-router + webpack3 + ES6/7 + axios + sass 
+vue2 + vux + vuex + vue-router + webpack3 + ES6/7 + axios + less 
 
 ## 项目运行
 
@@ -45,7 +45,11 @@ npm run build   //生成的dist文件夹放在服务器即可正常访问
 │ │ ├── axios.js                                // axios底层封装
 │ │ ├── util.js                                 // 常用的js方法
 │ │ └── rem.js                                  // 移动端自适应,1rem = 37.5px(iphone6)
-│ ├── images                                    // 公共图片
+│ ├── assets                                    // 资源文件
+│ | └──  images                                 // 图片
+│ | └──  css                                    // 样式
+| |      └── common.less                        // 公共样式
+| |      └── theme.less                         // 主题样式
 │ ├── page                                      // 页面
 │ | └── redirect                                // 重定向页面
 | |      └── redirect.vue                       // 具体页面
@@ -61,10 +65,10 @@ npm run build   //生成的dist文件夹放在服务器即可正常访问
 │ │ ├── modules                                 // store模块
 │ │ ├── mutation-types.js                       // 定义常量muations名
 │ │ └── mutations.js                            // 配置mutations
-│ └── style
-│   └── common.scss                             // 公共样式文件
 │ ├── App.vue                                   // 页面入口文件
 │ ├── main.js                                   // 程序入口文件
+├── static                                      // 静态资源文件
+│ └── icon                                      // 静态资源图标
 ├── favicon.ico                                 // 图标
 ├── index.html                                  // 入口html文件
 .
